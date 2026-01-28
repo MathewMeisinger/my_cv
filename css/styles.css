@@ -1,0 +1,176 @@
+:root {
+    --navy: #0b1f3a;
+    --navy-hover: #12315a;
+
+    --skill-accent: #1f6f8b;
+    --skill-accent-hover: #2a8fb1;
+
+    --bg-light: #f8f9fa;
+    --text-light: #212529;
+
+    --bg-dark: #121826;
+    --text-dark: #e9ecef;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+h1, h2, h4 {
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.cv-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.cv-list li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cv-list li:last-child {
+    border-bottom: none;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    border-left: 3px solid #dee2e6;
+    margin-left: 1rem;
+}
+
+.timeline li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0.9rem;
+    width: 12px;
+    height: 12px;
+    background: #0d6efd;
+    border-radius: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+
+    width: 52px;
+    height: 52px;
+
+    background-color: var(--navy);
+    color: #ffffff;
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        transform 0.2s ease,
+        background-color 0.2s ease;
+
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: var(--navy-hover);
+    transform: translateY(-3px);
+    color: #ffffff;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.navbar-navy {
+    background-color: var(--navy);
+}
+
+.navbar-navy .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-navy .nav-link:hover {
+    color: #ffffff;
+}
+
+.skill-badge {
+    background-color: var(--skill-accent);
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5rem;
+}
+
+.skill-badge:hover {
+    background-color: var(--skill-accent-hover);
+}
+
+[data-theme="light"] body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] section {
+    background-color: transparent;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .navbar-navy,
+[data-theme="dark"] .footer-navy {
+    background-color: #081629;
+}
+
+[data-theme="dark"] .skill-badge {
+    background-color: #2a8fb1;
+}
+
+.footer-navy {
+    background-color: var(--navy);
+}
