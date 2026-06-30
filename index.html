@@ -5,151 +5,541 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>My CV</title>
+    <title>Mathew Meisinger</title>
+
+    <link rel="icon" type="image/png" href="images/jedi.png">
 </head>
 
-<header>
-    <a id="top"></a>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-navy">
-        <div class="container">
-        <a class="navbar-brand" href="#">Mathew Meisinger</a>
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body class="d-flex flex-column min-vh-100">
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <button id="themeToggle" class="btn btn-outline-light ms-3" type="button" aria-label="Toggle dark mode"> 🌙 </button>
-            </ul>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#certifications">Certifications</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+
+            <button id="theme-toggle" class="btn btn-outline-secondary ms-auto" type="button">
+                Dark Mode
+            </button>
+
+            </div>
+
         </div>
-        </div>
-    </nav>
-</header>
 
+        </nav>
+    </header>
+    
 
-<body>
+    <section id="home">
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">About Me</h2>
-            <h4 class="mb-4">Who am I?</h4>
-            <p>
-                My name is Mathew Meisinger and I am currently in the process of transitioning from Critical Care Paramedic 
-                to Software Engineer. I am born and raised in Cape Town, South Africa and am 1 of 4 children born to my parents 
-                Thomas and Ingelise. My mother is South African and my father is Austrain. My father moved to South Africa with 
-                his family when he was 11 years old and met my mother when they were both working for the same company. My family 
-                has moved around a bit and lived in Australia and the UK for a time before coming back home and settling in Cape Town, 
-                where I completed all my education.
-            </p>
-            <h4 class="mb-4">My Experiences</h4>
-            <p>
-                I have always been fortunate enough to have a variety of experiences thanks to my parents encouraging us to try new things 
-                as well as taking us on trips around Africa, the surrounding countries and then the rest of the world. These experiences include 
-                exposure to wildlife, the ocean and a variety of different cultures from around the world. These experiences have shaped me into the person I am today 
-                and have given me a unique perspective on life and the world around me. For this I can only be grateful to my parents for giving me these opportunities.
-            </p>
-            <h4 class="mb-4">My Passions and Motivations</h4>
-            <p>
-                From an early age I have always had a passion for helping people and solving problems. This passion drove me first to becoming a lifeguard on the 
-                beaches of Cape Town and then to becoming a Critical Care Paramedic. I have always been driven by the desire to make a difference in people's lives, as well as 
-                solving complex problems and this has led me to pursue a career in software engineering where I can apply my problem-solving skills to create innovative solutions.
-            </p>
-        </div>
-    </section>
+        <div class="container py-5 py-5">
 
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Skills and Competencies</h2>
-            <ul class="list-unstyled d-flex flex-wrap gap-2">
-                <li><span class="badge skill-badge">Communication</span></li>
-                <li><span class="badge skill-badge">Problem Solving</span></li>
-                <li><span class="badge skill-badge">Teamwork</span></li>
-                <li><span class="badge skill-badge">Leadership</span></li>
-                <li><span class="badge skill-badge">Adaptability</span></li>
-                <li><span class="badge skill-badge">Time Management</span></li>
-                <li><span class="badge skill-badge">Critical Thinking</span></li>
-                <li><span class="badge skill-badge">Attention to Detail</span></li>
-                <li><span class="badge skill-badge">Working well under pressure</span></li>
-                <li><span class="badge skill-badge">Programming Languages: Python, HTML, CSS, JavaScript</span></li>
-                <li><span class="badge skill-badge">Frameworks and Libraries: Django, Flask</span></li>
-            </ul>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+                <div class="col-10 col-sm-8 col-lg-6 text-center">
+                <img src="images/profile_picture.jpeg" class="rounded-circle img-fluid" alt="Profile Picture" width="250" height="250" loading="lazy">
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Mathew Meisinger</h1>
+                    <p class="lead">
+                        Software Developer, Data Analyst, and AI Enthusiast with a background in Critical Care Medicine.
+                        Passionate about building data-driven applications, solving complex problems, and creating technology that delivers real-world impact.
+                    </p>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#projects" class="icon-link">My Projects<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> 
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <section id="education" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Education</h2>
-            <ul class="timeline">
-                <li>Kenridge Primary School (2001 - 2007)</li>
-                <li>Stellenberg High School (2008 - 2012)</li>
-                <li>Ambutek - Basic Ambulance Assistant (2014)</li>
-                <li>Intec College - Physical Science and Biology added to matric certificate (2015 - 2016)</li>
-                <li>Cape Peninsula University of Technology - Bachelor of Emergency Medical Care (2016 - 2021)</li>
-                <li>HyperionDev - Software Engineering and AI (2025 - 2026)</li>
-            </ul>
+    <section id="about">
+
+        <div class="px-4 py-5 my-5 text-center">
+
+            <h1 class="display-5 fw-bold lh-1 mb-3">About Me</h1> 
+
+            <div class="col-lg-8 mx-auto"> 
+
+                <p class="lead mb-4">
+                    My journey into technology began after five years as a Critical Care Paramedic, where I learned to solve complex problems, make critical decisions under pressure, and lead teams in demanding environments.
+                    Today, I apply those same skills to software development, data analytics, and artificial intelligence.
+                    <br><br>
+                    I primarily work with Python, Django, SQL, Docker, Git, Flask, PyTorch, TensorFlow, and Scikit-learn, building projects that range from web applications to machine learning solutions.
+                    I am particularly interested in data-driven decision-making, AI systems, and creating software that delivers real-world value.
+                    <br><br>
+                    When I'm not coding, you'll usually find me exploring new technologies, studying machine learning concepts, exercising, or working on personal projects that challenge me to learn something new.
+                </p> 
+
+            </div> 
+
         </div>
+
     </section>
 
-    <section id="experience" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Work Experience</h2>
-            <ul class="timeline">
-                <li>Waitering and bar staff (2010 - 2014)</li>
-                <li>Lifeguard at multipole Blue Flag beaches in Cape Town (2012 - 2014)</li>
-                <li>Basic Ambulance Assistant (2014 - 2016)</li>
-                <li>Bar staff during studies (2016 - 2021)</li>
-                <li>Critical Care Paramedic at Netcare 911 (2021 - 2022)</li>
-                <li>Band 6 Paramedic for London Ambulance Service (2022 - 2025)</li>
-            </ul>
+    <section id="skills">
+
+        <div class="container px-4 py-5" id="featured-3"> 
+        <h2 class="pb-2 border-bottom">Technical Skills</h2> 
+            <div class="row g-4 py-5 row-cols-1 row-cols-md-2"> 
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="images/program_language.png" alt="Coding Languages Image">
+                    </div> 
+                <h3 class="fs-2 text-body-emphasis">Programming Languages</h3> 
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>SQL</li>
+                </ul>
+                </div>
+
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="images/web_pages.png" alt="Web Page Image">
+                    </div> 
+
+                    <h3 class="fs-2 text-body-emphasis">Web Technologies</h3> 
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>FLASK</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="images/dev_tools.png" alt="Developer Tools Icon">
+                    </div> 
+                    <h3 class="fs-2 text-body-emphasis">Developer Tools</h3> 
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Docker</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="images/libraries.png" alt="Library Icon">
+                    </div> 
+                    <h3 class="fs-2 text-body-emphasis">Libraries and Frameworks</h3> 
+                    <ul>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Scikit-Learn</li>
+                        <li>TensorFlow</li>
+                        <li>Pytorch</li>
+                        <li>Keras</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Streamlit</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </section>
 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Get in touch</h2>
-            <ul class="cv-list">
-                <li>Mobile: 065 317 4095</li>
-                <li>Email: mathew.meisinger@icloud.com</li>
-            </ul>
+    <section id="projects">
+
+        <div class="container px-4 py-5" id="featured-3"> 
+        <h2 class="pb-2 border-bottom">Some of my Projects</h2> 
+            <div class="row g-4 py-5 row-cols-1 row-cols-md-2">
+
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"> 
+                        <img src="images/website.png" alt="Web Page Icon">
+                    </div> 
+                    <h3 class="fs-2 text-body-emphasis">e-Commerce Web Application</h3> 
+                    <p>
+                        This project is a Django based eCommerce web application that supports roles for buyers and vendors, whilst also providing stores, products, carts, orders, reviews, REST API endpoints, and X integration.
+                        It extends a marketplace-style workflow where vendors can create stores and products, buyers can browse listings and place orders, and selected events can trigger social media posts.<br><br>
+                        The project includes both traditional Django views and API endpoints for stores and products. It also includes email-based invoice sending during checkout and X/Twitter posting through the Tweepy client.
+                    </p>
+                    <h5>Technologies used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML, CSS</li>
+                        <li>Django, Django REST Framework</li>
+                        <li>Tweepy</li>
+                        <li>PyMySQL and mariadb</li>
+                        <li>python-dotenv</li>
+                    </ul>
+                    <a href="https://github.com/MathewMeisinger/eCommerce_application" class="icon-link">View the GitHub Repo<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> 
+                </div>
+
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"> 
+                        <img src="images/data_analysis.png" alt="Data Analysis Icon">
+                    </div> 
+                    <h3 class="fs-2 text-body-emphasis">Exploratory Data Analysis</h3> 
+                    <p>
+                        This project is an exploratory data analysis (EDA) study of an automobile dataset.
+                        The notebook focuses on cleaning the raw data, preparing the columns for analysis, and investigating relationships between vehicle price, fuel efficiency, engine size, horsepower, and manufacturer trends.
+                        <br><br>
+                        Conducted end-to-end data preparation and analysis on a vehicle dataset, including data cleaning, preprocessing, and exploratory analysis.
+                        Generated insights into vehicle pricing, fuel economy, engine characteristics, and manufacturer trends through statistical analysis and data visualization.
+                    </p>
+                    <h5>Technologies used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>Jupyter Notebook</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>MatPlotLib</li>
+                        <li>Seaborn</li>
+                    </ul>
+                    <a href="https://github.com/MathewMeisinger/data_analysis" class="icon-link">View the GitHub Repo<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> 
+                </div> 
+            
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"> 
+                        <img src="images/machine_learning.png" alt="Machine Learning Icon">
+                    </div> 
+                    <h3 class="fs-2 text-body-emphasis">Sentiment Analysis: Amazon Product Reviews</h3>
+                    <p>
+                        This project performs sentiment analysis on Amazon product reviews using Python natural language processing libraries.
+                        The main script allows a user to load a review dataset, preprocess the review text, remove stop words, analyse the sentiment of individual reviews, and compare the similarity between two reviews.
+                        <br><br>
+                        The project is implemented as a menu-driven command-line application and is designed to demonstrate practical NLP preprocessing and review analysis workflows.
+                    </p>
+                    <h5>Technologies used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>SpaCy</li>
+                        <li>TextBlob</li>
+                    </ul>
+                    <a href="https://github.com/MathewMeisinger/sentiment_analysis" class="icon-link">View the GitHub Repo<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> 
+                </div>
+
+                <div class="feature col"> 
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"> 
+                        <img src="images/machine_learning.png" alt="Machine Learning Icon">
+                    </div> 
+                    <h3 class="fs-2 text-body-emphasis">Analytics Dashboard for CDR</h3>
+                    <p>
+                        This Analytics Dashboard is a Streamlit application that provides an interactive interface for analysing call activity, operational performance and regional trends.
+                        Unlike traditional dashboards that process data locally, all business logic and analytics are retrieved from a secured FastAPI backend through authenticated REST API requests.
+                        Users authenticate using JWT credentials before accessing protected dashboard resources.
+                        <br><br>
+                        The dashboard was designed to provide a user-friendly interface for visualizing and exploring call data, while also demonstrating secure API integration and real-time data retrieval.
+                    </p>
+                    <h5>Technologies used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Streamlit</li>
+                        <li>RESTful API</li>
+                        <li>FAST API</li>
+                        <li>JWT</li>
+                        <li>MongoDB</li>
+                        <li>Pydantic</li>
+                    </ul>
+                    <a href="https://github.com/MathewMeisinger/analytics_dashboard" class="icon-link">View the Frontend Repo<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a>
+                    <a href="https://github.com/MathewMeisinger/analytics_dashboard_backend" class="icon-link">View the Backend Repo<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> 
+                </div> 
+
+            </div> 
         </div>
+
     </section>
 
-    <a href="#top" id="backToTop" class="back-to-top">
-    ↑
-    </a>
+    <section id="certifications">
 
+        <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">My Qualifactions and Certifications</h2>
+
+            <div class="accordion accordion-flush" id="certificationsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-collapseOne" aria-expanded="false" aria-controls="cert-collapseOne">
+                        Bachelor of Emergency Medical Care
+                    </button>
+                    </h2>
+                    <div id="cert-collapseOne" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+                    <div class="accordion-body">
+                        Institution: Cape Peninsula University of Technology.
+                        <br><br>
+                        I completed a Bachelor of Emergency Medical Care, a rigorous healthcare degree focused on advanced patient assessment, critical care, emergency medicine, and evidence-based clinical decision-making.
+                        The program developed strong analytical and problem-solving abilities through the management of complex medical emergencies in both pre-hospital and clinical environments.
+                        Through extensive practical experience, I gained expertise in working under pressure, leading teams, communicating effectively with diverse stakeholders, and making time-critical decisions.
+                        These skills have provided a strong foundation for my transition into technology, where I apply the same structured, data-driven approach to software development, data analysis, and machine learning projects.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-collapseTwo" aria-expanded="false" aria-controls="cert-collapseTwo">
+                        CS50x
+                    </button>
+                    </h2>
+                    <div id="cert-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+                    <div class="accordion-body">
+                        Institution: Harvard Online
+                        <br><br>
+                        I completed Harvard University's CS50x, an intensive introduction to computer science and software development.
+                        The course covered foundational computer science concepts including algorithms, data structures, computational thinking, memory management, databases, web development, and software engineering principles.
+                        Through a series of hands-on programming projects, I developed practical experience in problem-solving, debugging, and building applications using multiple technologies.
+                        The course provided a strong foundation for further study in Python, data analysis, machine learning, and full-stack web development.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-collapseThree" aria-expanded="false" aria-controls="cert-collapseThree">
+                        Software Engineering and AI Bootcamp
+                    </button>
+                    </h2>
+                    <div id="cert-collapseThree" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+                    <div class="accordion-body">
+                        Institution: HyperionDev & Stellenbosch University
+                        <br><br>
+                        Completed a comprehensive Software Engineering and Artificial Intelligence program focused on modern software development practices, data analysis, machine learning, and AI applications.
+                        The course covered Python programming, SQL, software engineering principles, version control, web development, data preprocessing, model development, and machine learning workflows.
+                        Through a combination of practical projects and real-world problem-solving, I developed experience in building software solutions, analyzing data, and applying machine learning techniques
+                        to generate actionable insights and intelligent applications.
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="experience">
+        <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">My Work Experience</h2>
+
+            <div class="accordion accordion-flush" id="experienceAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp-collapseOne" aria-expanded="false" aria-controls="exp-collapseOne">
+                        Software Development Intern | London Success Academy (Remote)
+                    </button>
+                    </h2>
+                    <div id="exp-collapseOne" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        06/2026 - 07/2026                       
+                        <br><br>
+                        I completed an internship with London Success Academy, where I contributed to the development of web applications and software solutions.
+                        During this internship, I gained hands-on experience in full-stack development, working with technologies such as Python, Django, JavaScript, and SQL.
+                        I collaborated with a team of developers to design, implement, and test features for web applications, while also learning best practices in software engineering,
+                        version control, and agile development methodologies.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp-collapseTwo" aria-expanded="false" aria-controls="exp-collapseTwo">
+                        Band 6 Paramedic | London Ambulance Service NHS Trust (London, UK)
+                    </button>
+                    </h2>
+                    <div id="exp-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        09/2022 - 06/2025
+                        <br><br>
+                        I worked as a Band 6 Paramedic with the London Ambulance Service NHS Trust, where I provided advanced pre-hospital care to patients in emergency situations.
+                        My role involved assessing and managing critically ill and injured patients, making rapid clinical decisions, and coordinating with multidisciplinary teams to ensure optimal patient outcomes.
+                        I gained extensive experience in emergency medicine, patient assessment, and critical care interventions, while also developing strong leadership, communication, and problem-solving skills in high-pressure environments.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp-collapseThree" aria-expanded="false" aria-controls="exp-collapseThree">
+                        Critical Care Paramedic | Netcare 911 (Cape Town, South Africa)
+                    </button>
+                    </h2>
+                    <div id="exp-collapseThree" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        09/2021 - 09/2022
+                        <br><br>
+                        I worked as a Critical Care Paramedic with Netcare 911 in Cape Town, South Africa, where I provided specialized pre-hospital care to critically ill and injured patients.
+                        My role involved delivering advanced life support interventions, managing complex medical emergencies, and collaborating with healthcare professionals to optimize patient care.
+                        This experience enhanced my clinical skills and deepened my understanding of critical care principles in diverse healthcare settings.
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <div class="container px-4 py-5" id="hanging-icons"> 
+
+        <h2 class="pb-2 border-bottom">Connect with me</h2> 
+
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+                <div class="col d-flex align-items-start"> 
+
+                    <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <img src="images/github.png" alt="Github Icon">
+                    </div> 
+                        
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">GitHub</h3> 
+                        <p>For a more detailed look at my projects, collaborations and public repositories, feel free to have a look at my GitHub Profile and give me a follow!</p> <a href="https://github.com/MathewMeisinger" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start"> 
+                        
+                    <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <img src="images/linkedin.png" alt="LinkedIn Icon">
+                    </div> 
+                        
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">LinkedIn</h3> 
+                        <p>Have a detailed look at my LinkedIn profile where I have shared all my qualifications, projects, skills and work experience. Feel free to connect with me!</p> <a href="https://www.linkedin.com/in/mathew-meisinger-3b163bb3/" class="btn btn-primary">LinkedIn</a> 
+                    </div> 
+                </div> 
+
+                <div class="col d-flex align-items-start"> 
+
+                    <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <img src="images/discord.png" alt="Discord Icon">
+                    </div> 
+                    
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Discord</h3> 
+                        <p>If Discord is your preffered method of communication you are more than welcome to have a look at my profile and contact me there!</p> 
+                        <a href="https://discord.com/users/325262245946851338" class="btn btn-primary">Discord</a> 
+                    </div> 
+                </div>
+                
+            </div>
+
+            <section id="contact-form">
+                <div class="contact-form-intro">
+                    <h5>Alternatively you can contact me via email at: <strong>mathew.meisinger@gmail.com</strong></h5>
+                    <br>
+                    <h5>OR</h5>
+                    <br>
+                    <h5>Use the form below and I will get back to you as soon as possible:</h5>
+                    <br>
+                </div>
+
+                <form
+                    id="contact-formspree-form"
+                    method="POST"
+                    action="https://formspree.io/f/mzdqvjob"
+                    class="contact-form"
+                >
+                    <div
+                        id="contact-form-alert"
+                        class="alert d-none"
+                        role="alert"
+                    ></div>
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        class="contact-input"
+                        maxlength="100"
+                        required
+                    >
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email Address"
+                        class="contact-input"
+                        required
+                    >
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        class="contact-input"
+                        required
+                    >
+                    <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        class="contact-input"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </section>
+
+
+        </div>
+
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary"> 
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+            <span class="text-body-secondary text-center text-md-start mb-3 mb-md-0">
+                &copy; 2026 | Mathew Meisinger <br> Built using HTML, CSS and JavaScript.
+            </span>
+
+            <ul class="nav justify-content-center justify-content-md-end"> 
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About</a></li> 
+                <li class="nav-item"><a href="#skills" class="nav-link px-2 text-body-secondary">Skills</a></li> 
+                <li class="nav-item"><a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a></li> 
+                <li class="nav-item"><a href="#certifications" class="nav-link px-2 text-body-secondary">Certifications</a></li> 
+                <li class="nav-item"><a href="#experience" class="nav-link px-2 text-body-secondary">Experience</a></li> 
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li> 
+            </ul> 
+
+        </div> 
+    </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-</body>
 
-<footer class="footer-navy text-light py-4 mt-5">
-  <div class="container text-center">
-    <p class="mb-1">© 2026 Mathew Meisinger</p>
-    <small>
-      <a href="https://www.linkedin.com/in/mathew-meisinger-3b163bb3/" class="text-light me-3">LinkedIn</a>
-      <a href="https://github.com/MathewMeisinger" class="text-light">GitHub</a>
-    </small>
-  </div>
-</footer>
+</body>
 
 </html>
