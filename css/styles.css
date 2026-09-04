@@ -25,11 +25,75 @@ body {
 :root {
     --bg-color: white;
     --text-color: black;
+    --accent-color: #0e7490;
+    --accent-color-soft: rgba(14, 116, 144, 0.12);
+    --card-bg: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.08);
+    --card-shadow: rgba(0, 0, 0, 0.06);
+    --card-shadow-hover: rgba(0, 0, 0, 0.12);
+    --section-alt-bg: #f2f9fa;
 }
 
 [data-bs-theme="dark"] {
     --bg-color: #121212;
     --text-color: #f8f9fa;
+    --accent-color: #22d3ee;
+    --accent-color-soft: rgba(34, 211, 238, 0.15);
+    --card-bg: #1a1f24;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --card-shadow-hover: rgba(0, 0, 0, 0.45);
+    --section-alt-bg: #171b1e;
+}
+
+/* Heading font */
+h1, h2, h3 {
+    font-family: "Sora", system-ui, sans-serif;
+}
+
+/* Accent-colored section heading underline */
+h2.border-bottom {
+    display: inline-block;
+    border-color: var(--accent-color) !important;
+    border-width: 3px !important;
+}
+
+/* Alternating section background */
+.section-alt {
+    background-color: var(--section-alt-bg);
+}
+
+/* Skill / project cards */
+.feature {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 1px 3px var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px var(--card-shadow-hover);
+}
+
+/* Icon badges */
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--accent-color-soft);
+}
+
+.feature-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Accent-colored icon links (project repo links, hero CTA) */
+.icon-link {
+    color: var(--accent-color) !important;
 }
 
 /* Responsive images */
@@ -82,5 +146,5 @@ select {
 
 .contact-input:focus {
     outline: none;
-    border-color: #0d6efd;
+    border-color: var(--accent-color);
 }
