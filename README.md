@@ -9,7 +9,7 @@
 
 This repository contains my personal portfolio website, developed as a responsive single-page application using HTML5, CSS3, Bootstrap 5, and vanilla JavaScript.
 
-The website showcases my background, technical skills, software engineering projects, qualifications, professional experience, and contact information. It serves as an online portfolio for recruiters, employers, and collaborators while demonstrating front-end development practices and responsive web design.
+The website showcases my background, technical skills, data analysis projects, qualifications, professional experience, and contact information. It serves as an online portfolio for recruiters, employers, and collaborators while demonstrating front-end development practices and responsive web design.
 
 ---
 
@@ -18,9 +18,9 @@ The website showcases my background, technical skills, software engineering proj
 - Responsive single-page layout
 - Fixed Bootstrap navigation with smooth scrolling
 - Light/Dark theme toggle with preference stored in Local Storage
-- About section highlighting my career transition into software engineering
+- About section highlighting my career transition into data analysis
 - Technical skills grouped by category
-- Featured software projects with GitHub links
+- Featured data analysis projects with GitHub links
 - Qualifications and certifications displayed with Bootstrap accordions
 - Professional work experience displayed with Bootstrap accordions
 - Contact section with GitHub, LinkedIn and Discord
@@ -77,10 +77,11 @@ portfolio/
 
 ## Featured Projects
 
-- Django eCommerce Application
-- Exploratory Data Analysis
-- Amazon Review Sentiment Analysis
 - Call Data Analytics Dashboard (Streamlit + FastAPI + MongoDB)
+- Exploratory Data Analysis
+- Ebook Store Database Manager (SQLite)
+- Amazon Review Sentiment Analysis
+- Django eCommerce Application (other work)
 
 ---
 
@@ -154,7 +155,7 @@ This project is designed to be deployed easily using **GitHub Pages**.
 
 **Mathew Meisinger**
 
-Software Developer • Data Analyst • AI Enthusiast
+Data Analyst • Aspiring Data Scientist • Software Developer
 
 - GitHub: https://github.com/MathewMeisinger
 - LinkedIn: https://www.linkedin.com/in/mathew-meisinger-3b163bb3/
